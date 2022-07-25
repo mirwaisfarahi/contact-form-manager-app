@@ -1,11 +1,11 @@
 import React from "react";
 
 const ContactCard = (props) => {
-    const { id, name, email } = props.contact;
+    const { name, email } = props.contact;
     return (
         <tr>
-            <th scope="row">
-                {id}
+            <th scope="row" key={name}>
+            1
             </th>
             <td>
                 {name}

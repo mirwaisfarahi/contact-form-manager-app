@@ -22,6 +22,8 @@ class Add extends React.Component {
 
         this.props.contactHandler(this.state)
         this.setState({name: "", email: ""});
+        // this.props.history.goBack();
+        this.props.history.push("/")
     }
 
     render() {
